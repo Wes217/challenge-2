@@ -1,3 +1,4 @@
+/* -------Header------- */
 header{
     display: flex;
     justify-content: space-between;
@@ -11,7 +12,9 @@ header li{
     margin-top: 15px;
     padding: 0 20px;
 }
+/* -------Header------- */
 
+/* -------Hero------- */
 .hero{
     background-color: green;
     background-image: url("/assets/images/baylith.png");
@@ -29,6 +32,9 @@ header li{
     background-color: cadetblue;
 
 }
+/* -------Hero------- */
+
+
 /* -------Main------- */
 section{
     display:flex;
@@ -52,18 +58,45 @@ div p{
     text-align:left;
     padding-top: 10px;
 }
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card{
+    display:flex;
+    flex:1 0 auto;
+    align-items: center;
+    height: auto;
+    min-height: 200px;
+    min-width: 400px;
+    
+}
+.card{
+    background-color: cadetblue;
+    margin: 10px;
+    background-image: url("/assets/images/baylith.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 5px;
+
+}   
+.card h2{
+    background-color: cadetblue;
+}
+#p1{
+    width: 100%;
+}
+
+
+
+
 /* -------Main------- */
 
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     section{
         flex-direction: row;
         align-items: start;
