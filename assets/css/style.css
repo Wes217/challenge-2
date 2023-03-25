@@ -1,0 +1,79 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.hero{
+    background-color: green;
+    background-image: url("/assets/images/baylith.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.hero{
+    display: flex;
+    justify-content:end;
+    align-items: end;
+}
+.hero h2{
+    background-color: cadetblue;
+
+}
+/* -------Main------- */
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.subhead{
+    margin: 5px;
+    padding: 5px;
+}
+.content{
+    border-top: solid black;
+    margin: 25px 25px;
+
+}
+
+div p{
+    text-align:left;
+    padding-top: 10px;
+}
+/* -------Main------- */
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    section{
+        flex-direction: row;
+        align-items: start;
+    }
+    .content{
+        border: none;
+        border-left: solid black;
+    }
+    div p{
+        padding-top: 0;
+        padding-left: 10px;
+    }
+ }
