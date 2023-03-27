@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Flexbox Alignment</title>
+    <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -15,9 +15,10 @@
         <h1>Your Name</h1>
         <nav>
             <ul>
-                <li>name</li>
-                <li>name</li>
-                <li>name</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work</a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +27,8 @@
         <h2>Cool subtitle</h2>
     </div>
     <main>
-        <section>
+        
+        <section id="about">
         <div class="subhead">
             <h2>About Me</h2>
         </div>
@@ -36,17 +38,39 @@
         </section>
 
         
-  
-        <section>
+        <section id="work">
             <div class="subhead">
-                <h2 >Work</h2>
+                <h2>Work</h2>
             </div>
-            <div class="content">
-                <div class="card">
+            <div class="content" id="cards">
+                <button class="card" id="p1" type="button" onclick=" location.href='https://www.google.com/' ">
                     <h2>project 1</h2>
-                </div>
+                </button>
+                <button class="card" id="p2" type="button" onclick=" location.href='https://www.google.com/' ">
+                    <h2>project 2</h2>
+                </button>
+                <button class="card" id="p3" type="button" onclick=" location.href='https://www.google.com/' ">
+                    <h2>project 3</h2>
+                </button>
             </div>
         </section>
+
+
+        <section id="contact">
+            <div class="subhead">
+                <h2>Contact</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>name</li>
+                    <li>name</li>
+                    <li>name</li>
+                </ul>
+            </div>
+        </section>
+
+
+
 
 
 
