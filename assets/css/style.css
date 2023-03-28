@@ -30,7 +30,7 @@ a{
 /* -------Hero------- */
 .hero{
     background-color: cadetblue;
-    background-image: url("./assets/images/banner.jpg");
+    background-image: url("/assets/images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
@@ -104,7 +104,7 @@ div p{
 .card{
     background-color: cadetblue;
     margin: 10px;
-    background-image: url("./assets/images/baylith.png");
+    background-image: url("/assets/images/baylith.png");
     background-position: center;
     background-repeat: no-repeat;
     border-style: solid;
