@@ -2,12 +2,20 @@
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: cadetblue;
+    flex-direction: column;
 }
-
+header h1{
+    font-size: 40px;
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header li{
     list-style: none;
-    display: inline-block;
     font-size: 25px;
     margin-top: 15px;
     padding: 0 20px;
@@ -22,17 +30,25 @@ a{
 /* -------Hero------- */
 .hero{
     background-color: cadetblue;
-    background-image: url("/assets/images/baylith.png");
+    background-image: url("./assets/images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
+    background-size: 110%;
+    min-height: 200px;
 }
 
 .hero{
     display: flex;
     justify-content:end;
     align-items: end;
+    justify-content: space-between;
 }
+
+.hero img{
+    height: 150px;
+    align-self: center;
+}
+
 .hero h2{
     background-color: cadetblue;
 
@@ -53,7 +69,7 @@ section{
 }
 
 .subhead{
- 
+    font-size: 25px;
     margin: 5px;
     padding: 5px;
 }
@@ -81,14 +97,14 @@ div p{
     align-items: center;
     height: auto;
     min-height: 200px;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 90%;
     
 }
 .card{
     background-color: cadetblue;
     margin: 10px;
-    background-image: url("/assets/images/baylith.png");
+    background-image: url("./assets/images/baylith.png");
     background-position: center;
     background-repeat: no-repeat;
     border-style: solid;
@@ -97,6 +113,7 @@ div p{
 }  
 .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 
@@ -136,6 +153,20 @@ div p{
 
 
 /* -------Main------- */
+
+@media screen and (min-width: 768px){
+header{
+    flex-direction: row;
+}
+header ul{
+    flex-direction: row;
+}
+header li{
+    display: inline-block;
+}
+
+}
+
 
 @media screen and (min-width: 992px) {
     section{
